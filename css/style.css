@@ -1,0 +1,167 @@
+/* main configs of the page such as font, padding,background ... */
+body {
+    font-size: 16px;
+    font-family: Comic Sans MS;
+    padding: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("../image/octocat_darkwood.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* transparent card */
+.container-main {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* leftside card background and shadow */
+div .main-card {
+    background: #f9f9f9;
+    max-width: 300px;
+    box-shadow: -5px 2px 18px 4px #ccc;
+}
+
+/* leftside photo */
+.photo {
+    background: #f9f9f9;
+    width: 300px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+/* the circle image in the top of left info card */
+img {
+    position: relative;
+    top: -50px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    box-shadow: -1px 1px 11px 6px rgba(189, 172, 172, 0.33);
+}
+.content {
+    background: #f9f9f9;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: -35px;
+}
+
+/* when user hover on the left card it apply pulse */
+div .main-card:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* pulsing effect */
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* the right card that includes username and submit */
+form {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    max-width: 300px;
+    background: #f9f9f9;
+    margin-left: 30px;
+    font-size: 12px;
+    font-family: Comic Sans MS;
+}
+
+/* inputs full width */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* padding for containers */
+.container {
+    padding: 16px;
+}
+
+/* all input types */
+input {
+    height: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+}
+
+/* submit button collor and configs */
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+pre {
+    margin: 0;
+    font-family: inherit;
+}
+
+/* for centrize div */
+.text-center {
+    text-align: center;
+}
